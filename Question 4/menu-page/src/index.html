@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode-stylesheet" disabled>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">🍽️ FoodieHub</div>
+            <div class="theme-switch" id="theme-switch"></div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <div class="category-filter">
+            <button class="category-button" data-category="all">All</button>
+            <button class="category-button" data-category="appetizers">Appetizers</button>
+            <button class="category-button" data-category="main-course">Main Course</button>
+            <button class="category-button" data-category="desserts">Desserts</button>
+            <button class="category-button" data-category="beverages">Beverages</button>
+        </div>
+
+        <div class="menu-grid" id="menu-items">
+            <!-- Dynamic content -->
+        </div>
+    </main>
+
+    <div id="cart-icon">
+        🛒
+        <span id="cart-count">0</span>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

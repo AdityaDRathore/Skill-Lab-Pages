@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h1>My Projects</h1>
+            <div class="project-grid">
+                <div class="project-item" onclick="openModal('project1')">
+                    <img src="assets/images/project1-thumbnail.jpg" alt="Project 1">
+                    <h2>Project 1</h2>
+                </div>
+                <div class="project-item" onclick="openModal('project2')">
+                    <img src="assets/images/project2-thumbnail.jpg" alt="Project 2">
+                    <h2>Project 2</h2>
+                </div>
+                <div class="project-item" onclick="openModal('project3')">
+                    <img src="assets/images/project3-thumbnail.jpg" alt="Project 3">
+                    <h2>Project 3</h2>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <div id="project1" class="modal">
+        <span class="close" onclick="closeModal('project1')">&times;</span>
+        <img class="modal-content" src="assets/images/project1.jpg" alt="Project 1">
+        <div class="modal-description">
+            <h2>Project 1 Details</h2>
+            <p>Description of Project 1.</p>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <span class="close" onclick="closeModal('project2')">&times;</span>
+        <img class="modal-content" src="assets/images/project2.jpg" alt="Project 2">
+        <div class="modal-description">
+            <h2>Project 2 Details</h2>
+            <p>Description of Project 2.</p>
+        </div>
+    </div>
+
+    <div id="project3" class="modal">
+        <span class="close" onclick="closeModal('project3')">&times;</span>
+        <img class="modal-content" src="assets/images/project3.jpg" alt="Project 3">
+        <div class="modal-description">
+            <h2>Project 3 Details</h2>
+            <p>Description of Project 3.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+</body>
+</html>

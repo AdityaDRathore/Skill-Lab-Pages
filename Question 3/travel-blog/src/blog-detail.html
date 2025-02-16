@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blog Detail</title>
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header">
+        <header>
+            <div class="logo">
+                <h1>Travel Blog</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog-detail.html">Blog</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <article>
+            <img src="assets/images/banners/sunset.webp" alt="Beautiful sunset at Santorini" class="banner-image">
+            <h1>A Day in Vienna</h1>
+            <p>Blog Content of our Group..</p>
+            <div class="gallery">
+                <img src="assets/images/gallery/Walks_Venice_Boat_Tour_2024_0024.webp" alt="Venice Canal Tour" loading="lazy">
+                <img src="assets/images/gallery/Local Street Food Market.webp" alt="Local Street Food Market" loading="lazy">
+                <img src="assets/images/gallery/Mountain Hiking Trail.webp" alt="Mountain Hiking Trail" loading="lazy">
+                <!-- Additional images can be added here -->
+            </div>
+        </article>
+
+        <section class="comments">
+            <h2>Comments</h2>
+            <div class="comment-form">
+                <textarea placeholder="Leave a comment..."></textarea>
+                <button type="submit">Submit</button>
+            </div>
+            <div class="comment-list">
+                <!-- Existing comments will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer">
+        <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Pinterest</a>
+                </div>
+                <form class="newsletter-subscription" action="#" method="post">
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel Blog. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Component -->
+    <div id="header">
+        <header>
+            <div class="logo">
+                <h1>Travel Blog</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog-detail.html">Blog</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Travel Blog</h1>
+                <p>Explore the world with us!</p>
+            </div>
+        </section>
+
+        <section class="recent-posts">
+            <h2>Recent Blog Posts</h2>
+            <div class="posts-container">
+                <!-- Blog post cards will be dynamically inserted here -->
+            </div>
+            <button id="load-more">Load More</button>
+        </section>
+
+        <aside id="sidebar" aria-label="Related content">
+            <div class="sidebar">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#beach">Beach</a></li>
+                    <li><a href="#mountains">Mountains</a></li>
+                    <li><a href="#city">City</a></li>
+                    <li><a href="#adventure">Adventure</a></li>
+                    <li><a href="#food">Food</a></li>
+                </ul>
+                <h2>Tags</h2>
+                <ul>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#lifestyle">Lifestyle</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-container">
+                <!-- Destination cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer">
+        <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Pinterest</a>
+                </div>
+                <form class="newsletter-subscription" action="#" method="post">
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Travel Blog. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/validation.js"></script>
+</body>
+</html>

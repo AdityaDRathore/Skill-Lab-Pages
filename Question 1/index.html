@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main class="product-container">
+        <section class="product-gallery">
+            <div class="main-image" id="zoomContainer">
+                <div class="loading-spinner"></div>
+                <img src="images/main_image.png" alt="Product" id="mainImage">
+            </div>
+            <div class="thumbnails">
+                <img src="images/frontView.png" alt="Front" class="thumb">
+                <img src="images/sideView.png" alt="Side" class="thumb">
+                <img src="images/backView.png" alt="Back" class="thumb">
+            </div>
+        </section>
+
+        <section class="product-info">
+            <div class="product-header">
+                <h1>Black T-Shirt</h1>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+            
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(4.0)</span>
+            </div>
+
+            <p class="description">High-quality t-shirt for summer/p>
+            <div class="price-container">
+                <span class="price">$99.99</span>
+                <span class="original-price">$129.99</span>
+                <span class="discount">-23%</span>
+            </div>
+            <div class="quantity-selector">
+                <button id="decreaseQty">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="increaseQty">+</button>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn-add-cart">Add to Cart</button>
+                <button class="btn-buy-now">Buy Now</button>
+            </div>
+
+            <div class="variants">
+                <h3>Colors</h3>
+                <div class="color-options">
+                    <button class="color-btn active" data-color="black"></button>
+                    <button class="color-btn" data-color="blue"></button>
+                    <button class="color-btn" data-color="red"></button>
+                </div>
+                
+                <h3>Size</h3>
+                <div class="size-options">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn active">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="features">Features</button>
+                <button class="tab-btn" data-tab="specs">Specifications</button>
+                <button class="tab-btn" data-tab="shipping">Shipping</button>
+            </div>
+
+            <div class="tab-content active" id="features">
+                <ul class="feature-list">
+                    <li><i class="fas fa-tshirt"></i> Premium Cotton Material</li>
+                    <li><i class="fas fa-wind"></i> Breathable Fabric</li>
+                    <li><i class="fas fa-tint"></i> Moisture Wicking</li>
+                    <li><i class="fas fa-sun"></i> UV Protection</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="specs">
+                <table class="specs-table">
+                    <tr>
+                        <th>Material</th>
+                        <td>100% Cotton</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>180 GSM</td>
+                    </tr>
+                    <tr>
+                        <th>Care</th>
+                        <td>Machine Washable</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tab-content" id="shipping">
+                <div class="shipping-info">
+                    <div class="shipping-item">
+                        <i class="fas fa-truck"></i>
+                        <h4>Free Shipping</h4>
+                        <p>On orders above $50</p>
+                    </div>
+                    <div class="shipping-item">
+                        <i class="fas fa-undo"></i>
+                        <h4>Easy Returns</h4>
+                        <p>30-day return policy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-stats">
+                <div class="average-rating">
+                    <span class="big-rating">4.5</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>Based on 128 reviews</span>
+                </div>
+            </div>
+            <div class="review-list">
+                <!-- Individual reviews -->
+                <div class="review-card">
+                    <div class="reviewer">
+                        <img src="images/userImage.jpg" alt="User">
+                        <div class="reviewer-info">
+                            <h4>John Doe</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Great quality t-shirt! Fits perfectly and the material is very comfortable.</p>
+                    <span class="review-date">2 days ago</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="related-products">
+        <h2>You May Also Like</h2>
+        <div class="product-grid">
+            <!-- Related product cards -->
+            <div class="product-card">
+                <img src="images/tshirtWhite.jpg" alt="Related Product">
+                <h3>White T-Shirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <span class="price">$89.99</span>
+            </div>
+            <!-- Add more product cards -->
+        </div>
+    </section>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <p>Product added to cart!</p>
+            <button class="modal-close">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

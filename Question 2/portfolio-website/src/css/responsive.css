@@ -1,0 +1,51 @@
+/* /portfolio-website/portfolio-website/src/css/responsive.css */
+
+/* Responsive Design Styles */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-form {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
